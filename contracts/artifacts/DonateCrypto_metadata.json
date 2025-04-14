@@ -8,6 +8,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "title",
 						"type": "string"
@@ -163,11 +176,11 @@
 	},
 	"sources": {
 		"contracts/DonateCrypto.sol": {
-			"keccak256": "0x35be35d26bd7174fa1064bb824e2d2134b5e45acbd420bf4d0de200f2f46f101",
+			"keccak256": "0x4a78064272f12c35ea909d18d51c4386affb4801aec0993baea5ed31351782a0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://093fec5bcd2e7463f73d108e283a24ac10d87256a690063cee14ffc22818f88f",
-				"dweb:/ipfs/QmaLdeUiWxJj17FX3LEawzJxKgPmeFcydbHNwFSg27Zwy5"
+				"bzz-raw://2067fa93eda9ec65ab09328e18a8f9d8dc1dae0c3f8a27659d1dbee582840817",
+				"dweb:/ipfs/QmUTD6JAZcVbyBZCfow5i8VHVx4uNmSJ1qJmfLrKa27ymT"
 			]
 		}
 	},

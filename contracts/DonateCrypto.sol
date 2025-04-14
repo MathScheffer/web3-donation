@@ -40,4 +40,16 @@ contract DonateCrypto {
     function deactivateCampaing(uint256 id) public {
         campaings[id].active = false;
     }
+
+    function Withdraw(uint256 id) public {
+        Campaign memory  campaign = campaings[id];
+        require(campaign.author == msg.sender, "Somente o autor pode sacar.");
+        require(campaign.active, "Campanha nao esta ativa!");
+        require(campaign.balance > fee, "Saldo total menor que a taxa de cobranca.");
+
+        address payable recipient = payable(campaign.author);
+        recipient.call{value: campaign.balance - fee}("");
+
+        campaings[id].active = false;
+    }
 }
